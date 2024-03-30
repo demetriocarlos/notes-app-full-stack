@@ -165,12 +165,12 @@ const App = () => {
           {error? error: ''}
       <ol>
         {notes.map((note) =>(
-             <Note key={note.id} {...note}/>
+             <Note key={note.id} note={note} toggleImportance={toggleImportanceOf}/>
         ))}
       </ol>
-
+          {/*...note*/}
       
-
+  
 
     </div>
   )
@@ -179,3 +179,7 @@ const App = () => {
  
 
 export default App
+
+
+
+//en caso de nesesitar la cofiguracion,  "test": "react-scripts build",
